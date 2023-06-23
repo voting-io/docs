@@ -16,6 +16,7 @@ jobs:
         with:
           node-version: 18
           cache: yarn
+          cache-dependency-path: package-lock.json
       - name: Install dependencies
         run: yarn install --frozen-lockfile
       - name: Test build website
@@ -29,6 +30,7 @@ jobs:
         with:
           node-version: 18
           cache: yarn
+          cache-dependency-path: package-lock.json
       - uses: webfactory/ssh-agent@v0.5.0
         with:
           ssh-private-key: ${{ secrets.GH_PAGES_DEPLOY }}
