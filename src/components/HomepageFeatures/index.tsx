@@ -29,21 +29,11 @@ const FeatureList: FeatureItem[] = [
       </>
     ),
   },
-  {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/logo.svg').default,
-    description: (
-      <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
-      </>
-    ),
-  },
 ];
 
 function Feature({title, Svg, description}: FeatureItem) {
   return (
-    <div className={clsx('col col--4')}>
+    <div className={clsx('col col--6')}>
       <div className="text--center">
         <Svg className={styles.featureSvg} role="img" />
       </div>
