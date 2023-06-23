@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkvoting_site=self.webpackChunkvoting_site||[]).push([[254],{7731:o=>{o.exports=JSON.parse('{"permalink":"/docs/blog/tags/docusaurus","page":1,"postsPerPage":3,"totalPages":1,"totalCount":3,"blogDescription":"Veja o que h\xe1 de novo no projeto","blogTitle":"Changelog do projeto"}')}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkvoting_site=self.webpackChunkvoting_site||[]).push([[180],{5422:e=>{e.exports=JSON.parse('{"permalink":"/docs/blog/tags/hello","page":1,"postsPerPage":1,"totalPages":1,"totalCount":1,"blogDescription":"Veja o que h\xe1 de novo no projeto","blogTitle":"Changelog do projeto"}')}}]);

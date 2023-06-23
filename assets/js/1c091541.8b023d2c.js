@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkvoting_site=self.webpackChunkvoting_site||[]).push([[8271],{4469:e=>{e.exports=JSON.parse('{"name":"docusaurus-plugin-content-blog","id":"default"}')}}]);

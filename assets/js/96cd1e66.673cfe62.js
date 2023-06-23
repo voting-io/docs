@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkvoting_site=self.webpackChunkvoting_site||[]).push([[971],{6442:l=>{l.exports=JSON.parse('[{"label":"docusaurus","permalink":"/docs/blog/tags/docusaurus","count":3},{"label":"hello","permalink":"/docs/blog/tags/hello","count":1},{"label":"hola","permalink":"/docs/blog/tags/hola","count":1}]')}}]);
