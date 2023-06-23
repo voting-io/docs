@@ -1,8 +1,9 @@
 ---
-sidebar_position: 5
 ---
 
-# Deploy your site
+# Mobile
+
+App base para execução e testes do projeto
 
 Docusaurus is a **static-site-generator** (also called **[Jamstack](https://jamstack.org/)**).
 
