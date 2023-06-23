@@ -26,17 +26,34 @@ const config = {
     [
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
-      ({
-        docs: {
-          sidebarPath: require.resolve('./sidebars.js')
-        },
-        blog: {
-          showReadingTime: true
-        },
+      (
+        {
+          docs: {
+            sidebarPath: require.resolve('./sidebars.js')
+          },
+          blog: {
+            showReadingTime: true
+          },
+          theme: {
+            customCss: require.resolve('./src/css/custom.css'),
+          },
+        }
+      ),
+    ],
+    [
+      'redocusaurus',
+      /** @type {import('@docusaurus/preset-classic').Options} */
+      {
+        specs: [
+          {
+            spec: 'openapi.yaml',
+            route: '/api/',
+          },
+        ],
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
-      }),
+      },
     ],
   ],
 
@@ -58,7 +75,7 @@ const config = {
             position: 'left',
             label: 'Tutorial',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          { to: '/blog', label: 'Blog', position: 'left' },
           {
             href: 'https://github.com/facebook/docusaurus',
             label: 'GitHub',
