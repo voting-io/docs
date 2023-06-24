@@ -1,0 +1,35 @@
+@startuml
+
+title Sequência de eventos da versão 1
+
+actor Usuário
+participant Interface
+participant API
+
+group Criação de sessão
+  Usuário -> Interface: Cria sessão
+  Interface -> API: Requisita criação de sessão
+  API -> Interface : Retorna código de sessão
+  API x-[#red]> Interface : **[400]** Dados inválidos
+  Interface -> Usuário: Exibe código de sessão
+end
+group Voto
+  Usuário -> Interface: Insere código de sessão
+  Interface -> API: Busca dados da sessão
+  API -> Interface: Retorna dados da sessão
+  API x-[#red]> Interface : **[404]** Sessão não encontrada
+  Interface -> Usuário: Solicita voto
+  Usuário -> Interface: Insere voto
+  Interface -> API: Computa voto
+  API x-[#red]> Interface : **[404](001)** Sessão de votação encerrada
+  Interface -> Usuário: Confirma voto
+end
+group Resultado
+  Usuário -> Interface: Insere código de sessão
+  Interface -> API: Busca dados da sessão
+  API -> Interface: Retorna dados da sessão
+  API x-[#red]> Interface : **[404]** Sessão não encontrada
+  API x-[#red]> Interface : **[404](002)** Sessão de votação em andamento
+  Interface -> Usuário: Exibe resultado
+end
+@enduml

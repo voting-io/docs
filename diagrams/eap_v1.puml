@@ -1,0 +1,19 @@
+@startwbs
+title Estrutura analítica da versão 1
+* Voting IO
+** Sessão de votação
+*** Criação de sessão
+****_ Tema da votação
+****_ Voto único ou múltiplo
+****_ Opções de voto
+****_ Tempo de votação
+** Voto
+*** Identificação da sessão
+**** Identificação do usuário
+*****_ (se necessário)
+**** Voto
+**** Alteração de voto
+*****_ (ou voto adicional)
+** Resultado da sessão
+*** Exibição do resultado
+@endwbs
