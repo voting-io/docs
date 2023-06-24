@@ -10,4 +10,5 @@ A ideia deste projeto é criar uma especificação de API para votações que po
 
 | Funcionalidade | V1  | V2  | V3  |
 | :------------- | :-: | :-: | :-: |
-| Configuração   | ✔️  | ✔️  | ✔️  |
+| Sessão         | ✔️ | ✔️  | ✔️  |
+| Voto           | ✔️ | ✔️  | ✔️  |
